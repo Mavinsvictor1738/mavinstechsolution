@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>All Products | Mavinstech Solution</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+<style>
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  background:#f4f6fb;
+  color:#111827;
+}
+
+/* HEADER */
+
+header{
+  background:white;
+  padding:18px 7%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  box-shadow:0 5px 20px rgba(0,0,0,0.08);
+  position:sticky;
+  top:0;
+  z-index:999;
+}
+
+.logo{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+.logo img{
+  width:55px;
+}
+
+.logo h2{
+  font-size:24px;
+}
+
+nav{
+  display:flex;
+  gap:15px;
+}
+
+nav a{
+  text-decoration:none;
+  color:#111827;
+  font-weight:600;
+}
+
+nav a:hover{
+  color:#2563eb;
+}
+
+/* HERO */
+
+.hero{
+  background:
+  linear-gradient(rgba(2,6,23,0.8),
+  rgba(15,23,42,0.8)),
+  url('https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1600&auto=format&fit=crop');
+
+  background-size:cover;
+  background-position:center;
+
+  color:white;
+  text-align:center;
+  padding:100px 20px;
+}
+
+.hero h1{
+  font-size:55px;
+  margin-bottom:15px;
+}
+
+.hero p{
+  max-width:800px;
+  margin:auto;
+  line-height:1.9;
+}
+
+/* SEARCH */
+
+.search{
+  margin-top:30px;
+  display:flex;
+  justify-content:center;
+}
+
+.search input{
+  width:90%;
+  max-width:550px;
+  padding:16px;
+  border:none;
+  border-radius:12px;
+  font-size:16px;
+  outline:none;
+}
+
+/* PRODUCTS */
+
+.container{
+  max-width:1350px;
+  margin:auto;
+  padding:60px 20px;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:
+  repeat(auto-fit,minmax(280px,1fr));
+  gap:28px;
+}
+
+.card{
+  background:white;
+  border-radius:24px;
+  overflow:hidden;
+  box-shadow:0 10px 30px rgba(0,0,0,0.08);
+  transition:0.4s;
+}
+
+.card:hover{
+  transform:translateY(-10px);
+}
+
+.card img{
+  width:100%;
+  height:240px;
+  object-fit:cover;
+}
+
+.info{
+  padding:24px;
+}
+
+.info h3{
+  margin-bottom:10px;
+}
+
+.info p{
+  color:#64748b;
+  line-height:1.7;
+}
+
+.price{
+  color:#2563eb;
+  font-size:24px;
+  font-weight:700;
+  margin:15px 0;
+}
+
+.btn{
+  width:100%;
+  border:none;
+  padding:14px;
+  border-radius:12px;
+  background:linear-gradient(135deg,#2563eb,#0ea5e9);
+  color:white;
+  cursor:pointer;
+  font-weight:700;
+}
+
+/* FOOTER */
+
+footer{
+  background:#0f172a;
+  color:white;
+  text-align:center;
+  padding:40px 20px;
+}
+
+.whatsapp{
+  position:fixed;
+  right:20px;
+  bottom:20px;
+  background:#25D366;
+  color:white;
+  width:65px;
+  height:65px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-decoration:none;
+  font-size:30px;
+}
+
+@media(max-width:700px){
+
+header{
+  flex-direction:column;
+  gap:15px;
+}
+
+.hero h1{
+  font-size:38px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+
+<img src="media/Mavinstech Solution Logo.png">
+
+<h2>Mavinstech</h2>
+
+</div>
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="shop.html">Shop</a>
+<a href="products.html">Products</a>
+<a href="contact.html">Contact</a>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<h1>All Products & Services</h1>
+
+<p>
+Explore all branding, printing,
+website, digital and creative services
+offered by Mavinstech Solution.
+</p>
+
+<div class="search">
+
+<input type="text"
+id="search"
+placeholder="Search products..."
+onkeyup="searchProduct()">
+
+</div>
+
+</section>
+
+<div class="container">
+
+<div class="grid">
+
+<!-- PRODUCT -->
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=1200&auto=format&fit=crop">
+
+<div class="info">
+
+<h3>T-Shirt Printing</h3>
+
+<p>
+Professional branded T-shirts
+for schools and businesses.
+</p>
+
+<div class="price">
+KSh 500
+</div>
+
+<button class="btn"
+onclick="order('T-Shirt Printing',500)">
+Order Now
+</button>
+
+</div>
+
+</div>
+
+<!-- PRODUCT -->
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1514228742587-6b1558fcf93a?q=80&w=1200&auto=format&fit=crop">
+
+<div class="info">
+
+<h3>Mug Printing</h3>
+
+<p>
+Custom mugs with logo and photo branding.
+</p>
+
+<div class="price">
+KSh 300
+</div>
+
+<button class="btn"
+onclick="order('Mug Printing',300)">
+Order Now
+</button>
+
+</div>
+
+</div>
+
+<!-- PRODUCT -->
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?q=80&w=1200&auto=format&fit=crop">
+
+<div class="info">
+
+<h3>Banner Printing</h3>
+
+<p>
+Event and business banners with quality finish.
+</p>
+
+<div class="price">
+KSh 1500
+</div>
+
+<button class="btn"
+onclick="order('Banner Printing',1500)">
+Order Now
+</button>
+
+</div>
+
+</div>
+
+<!-- PRODUCT -->
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop">
+
+<div class="info">
+
+<h3>Website Design</h3>
+
+<p>
+Modern responsive websites for businesses.
+</p>
+
+<div class="price">
+KSh 15000
+</div>
+
+<button class="btn"
+onclick="order('Website Design',15000)">
+Order Now
+</button>
+
+</div>
+
+</div>
+
+<!-- PRODUCT -->
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1200&auto=format&fit=crop">
+
+<div class="info">
+
+<h3>Logo Design</h3>
+
+<p>
+Creative logo and business branding solutions.
+</p>
+
+<div class="price">
+KSh 2500
+</div>
+
+<button class="btn"
+onclick="order('Logo Design',2500)">
+Order Now
+</button>
+
+</div>
+
+</div>
+
+<!-- PRODUCT -->
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1496171367470-9ed9a91ea931?q=80&w=1200&auto=format&fit=crop">
+
+<div class="info">
+
+<h3>Hoodie Branding</h3>
+
+<p>
+Custom hoodies for events and organizations.
+</p>
+
+<div class="price">
+KSh 1800
+</div>
+
+<button class="btn"
+onclick="order('Hoodie Branding',1800)">
+Order Now
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<footer>
+
+<h2>Mavinstech Solution</h2>
+
+<p>
+Professional Printing, Branding & Digital Services
+</p>
+
+<br>
+
+<p>
+Call/WhatsApp: 0740163974
+</p>
+
+</footer>
+
+<a class="whatsapp"
+href="https://wa.me/254740163974">
+
+<i class="fab fa-whatsapp"></i>
+
+</a>
+
+<script>
+
+function searchProduct(){
+
+let input =
+document.getElementById("search")
+.value
+.toLowerCase();
+
+document.querySelectorAll(".card")
+.forEach(card=>{
+
+card.style.display =
+card.innerText
+.toLowerCase()
+.includes(input)
+? "block"
+: "none";
+
+});
+
+}
+
+function order(product,price){
+
+let msg =
+`Hello Mavinstech Solution,%0A%0AI would like to order:%0A${product}%0APrice: KSh ${price}`;
+
+window.open(
+`https://wa.me/254740163974?text=${msg}`
+);
+
+}
+
+</script>
+
+</body>
+</html>

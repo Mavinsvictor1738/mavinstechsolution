@@ -1,0 +1,1376 @@
+<!DOCTYPE html>
+<html lang="en-KE">
+
+<head>
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>Mavinstech Shop | Printing & Branding Services</title>
+
+<!-- GOOGLE FONT -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+rel="stylesheet">
+
+<!-- FONT AWESOME -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+<style>
+
+:root{
+  --primary:#2563eb;
+  --primary-light:#0ea5e9;
+  --dark:#0f172a;
+  --dark2:#020617;
+  --white:#ffffff;
+  --light:#f8fafc;
+  --text:#475569;
+  --border:#e2e8f0;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  background:#f4f6fb;
+  color:#111827;
+  overflow-x:hidden;
+}
+
+a{
+  text-decoration:none;
+}
+
+img{
+  width:100%;
+  display:block;
+}
+
+/* =========================
+        HEADER
+========================= */
+
+.site-header{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  z-index:1000;
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  padding:18px 7%;
+
+  background:rgba(255,255,255,0.92);
+
+  backdrop-filter:blur(12px);
+
+  border-bottom:1px solid rgba(0,0,0,0.05);
+
+  box-shadow:0 5px 25px rgba(0,0,0,0.06);
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:14px;
+}
+
+.brand img{
+  width:58px;
+  height:58px;
+  object-fit:contain;
+  border-radius:14px;
+}
+
+.brand-text strong{
+  display:block;
+  font-size:24px;
+  font-weight:800;
+  color:#111827;
+}
+
+.brand-text small{
+  color:var(--primary);
+  font-size:12px;
+  font-weight:600;
+}
+
+.site-nav{
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
+
+.site-nav a{
+  color:#1f2937;
+  font-size:15px;
+  font-weight:600;
+  padding:12px 16px;
+  border-radius:12px;
+  transition:0.3s ease;
+}
+
+.site-nav a:hover,
+.site-nav .active{
+  background:#eff6ff;
+  color:var(--primary);
+}
+
+.nav-btn{
+  background:linear-gradient(
+  135deg,
+  var(--primary),
+  var(--primary-light));
+
+  color:white !important;
+}
+
+/* =========================
+        HERO
+========================= */
+
+.shop-hero{
+  background:
+  linear-gradient(rgba(2,6,23,0.85),
+  rgba(15,23,42,0.85)),
+  url('https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1600&auto=format&fit=crop');
+
+  background-size:cover;
+  background-position:center;
+
+  color:white;
+  text-align:center;
+
+  padding:180px 20px 100px;
+}
+
+.shop-hero h1{
+  font-size:60px;
+  margin-bottom:20px;
+}
+
+.shop-hero p{
+  max-width:850px;
+  margin:auto;
+  line-height:2;
+  color:#e2e8f0;
+  font-size:18px;
+}
+
+.hero-buttons{
+  display:flex;
+  justify-content:center;
+  gap:18px;
+  flex-wrap:wrap;
+  margin-top:35px;
+}
+
+.hero-btn{
+  padding:15px 28px;
+  border-radius:14px;
+  font-weight:700;
+  transition:0.3s;
+}
+
+.hero-btn-primary{
+  background:linear-gradient(135deg,#2563eb,#0ea5e9);
+  color:white;
+}
+
+.hero-btn-secondary{
+  background:white;
+  color:#111827;
+}
+
+.hero-btn:hover{
+  transform:translateY(-5px);
+}
+
+/* SEARCH */
+
+.search{
+  margin-top:35px;
+  display:flex;
+  justify-content:center;
+}
+
+.search-box{
+  background:white;
+  width:100%;
+  max-width:650px;
+  border-radius:18px;
+  overflow:hidden;
+  display:flex;
+  align-items:center;
+  padding:8px;
+  box-shadow:0 15px 40px rgba(0,0,0,0.2);
+}
+
+.search-box i{
+  color:#2563eb;
+  font-size:20px;
+  padding:0 15px;
+}
+
+.search-box input{
+  flex:1;
+  border:none;
+  outline:none;
+  padding:16px;
+  font-size:16px;
+}
+
+.search-box button{
+  border:none;
+  background:linear-gradient(135deg,#2563eb,#0ea5e9);
+  color:white;
+  padding:15px 24px;
+  border-radius:12px;
+  cursor:pointer;
+  font-weight:600;
+}
+
+/* =========================
+        FILTER NAV
+========================= */
+
+.shop-nav{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:12px;
+  padding:40px 20px;
+}
+
+.shop-nav button{
+  border:none;
+  padding:12px 20px;
+  border-radius:40px;
+  background:white;
+  cursor:pointer;
+  font-weight:600;
+  transition:0.3s;
+  box-shadow:0 3px 10px rgba(0,0,0,0.08);
+}
+
+.shop-nav button:hover,
+.shop-nav button.active{
+  background:#2563eb;
+  color:white;
+}
+
+/* =========================
+        PRODUCTS
+========================= */
+
+.container{
+  max-width:1350px;
+  margin:auto;
+  padding:20px;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:
+  repeat(auto-fit,minmax(280px,1fr));
+  gap:28px;
+}
+
+.card{
+  background:white;
+  border-radius:24px;
+  overflow:hidden;
+  position:relative;
+  transition:0.4s ease;
+  box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+.card:hover{
+  transform:translateY(-10px);
+}
+
+.card img{
+  width:100%;
+  height:240px;
+  object-fit:cover;
+}
+
+.badge{
+  position:absolute;
+  top:15px;
+  left:15px;
+  background:red;
+  color:white;
+  padding:6px 14px;
+  border-radius:40px;
+  font-size:12px;
+  font-weight:700;
+}
+
+.heart{
+  position:absolute;
+  top:15px;
+  right:15px;
+
+  width:40px;
+  height:40px;
+
+  border-radius:50%;
+  background:white;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  cursor:pointer;
+}
+
+.info{
+  padding:25px;
+  text-align:center;
+}
+
+.info h3{
+  margin-bottom:10px;
+  font-size:24px;
+}
+
+.info p{
+  color:#64748b;
+  margin-bottom:12px;
+  line-height:1.7;
+}
+
+.price{
+  color:#2563eb;
+  font-size:24px;
+  font-weight:700;
+}
+
+.btn{
+  width:100%;
+  padding:14px;
+  border:none;
+  border-radius:14px;
+
+  background:linear-gradient(
+  135deg,
+  #2563eb,
+  #0ea5e9);
+
+  color:white;
+
+  cursor:pointer;
+
+  font-weight:700;
+  font-size:15px;
+
+  margin-top:10px;
+}
+
+/* =========================
+      WHY CHOOSE US
+========================= */
+
+.why{
+  padding:90px 7%;
+}
+
+.section-title{
+  text-align:center;
+  margin-bottom:60px;
+}
+
+.section-title h2{
+  font-size:46px;
+  margin-bottom:15px;
+}
+
+.section-title p{
+  color:#64748b;
+  max-width:800px;
+  margin:auto;
+  line-height:1.9;
+}
+
+.why-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:25px;
+}
+
+.why-card{
+  background:white;
+  padding:35px;
+  border-radius:24px;
+  text-align:center;
+  box-shadow:0 10px 25px rgba(0,0,0,0.06);
+}
+
+.why-card i{
+  width:80px;
+  height:80px;
+  border-radius:20px;
+  background:#eff6ff;
+  color:#2563eb;
+  font-size:30px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  margin:auto auto 20px;
+}
+
+/* =========================
+        TESTIMONIALS
+========================= */
+
+.testimonials{
+  padding:90px 7%;
+  background:#0f172a;
+  color:white;
+}
+
+.testimonial-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:25px;
+}
+
+.testimonial-card{
+  background:rgba(255,255,255,0.06);
+  padding:30px;
+  border-radius:24px;
+}
+
+.testimonial-card p{
+  line-height:1.9;
+  color:#e2e8f0;
+}
+
+.testimonial-card h4{
+  margin-top:20px;
+  color:#38bdf8;
+}
+
+/* =========================
+      FLOAT BUTTONS
+========================= */
+
+.whatsapp,
+.cart{
+  position:fixed;
+  right:20px;
+  color:white;
+  text-decoration:none;
+  padding:15px 18px;
+  border-radius:50px;
+  font-weight:bold;
+  z-index:999;
+}
+
+.whatsapp{
+  bottom:20px;
+  background:#25D366;
+}
+
+.cart{
+  bottom:90px;
+  background:#111827;
+}
+
+/* =========================
+        FOOTER
+========================= */
+
+footer{
+  background:
+  linear-gradient(
+  135deg,
+  #020617,
+  #0f172a);
+
+  color:#cbd5e1;
+  padding:90px 7% 30px;
+}
+
+.footer-grid{
+  max-width:1250px;
+  margin:auto;
+
+  display:grid;
+
+  grid-template-columns:
+  repeat(auto-fit,minmax(240px,1fr));
+
+  gap:50px;
+}
+
+.footer-title{
+  color:white;
+  margin-bottom:22px;
+  font-size:22px;
+  font-weight:700;
+}
+
+.footer-about p{
+  line-height:1.9;
+  color:#94a3b8;
+  font-size:14px;
+}
+
+.footer-links{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+
+.footer-links a{
+  color:#94a3b8;
+}
+
+.socials{
+  display:flex;
+  gap:14px;
+  margin-top:25px;
+}
+
+.socials a{
+  width:44px;
+  height:44px;
+
+  border-radius:50%;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  background:#1e293b;
+  color:white;
+}
+
+.contact-info{
+  display:flex;
+  flex-direction:column;
+  gap:16px;
+  font-size:14px;
+}
+
+.copyright{
+  border-top:1px solid rgba(255,255,255,0.08);
+  margin-top:60px;
+  padding-top:25px;
+  text-align:center;
+  color:#64748b;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+.site-header{
+  flex-direction:column;
+  gap:18px;
+  padding:20px;
+}
+
+.site-nav{
+  flex-wrap:wrap;
+  justify-content:center;
+}
+
+.shop-hero h1{
+  font-size:42px;
+}
+
+}
+
+@media(max-width:600px){
+
+.shop-hero{
+  padding-top:220px;
+}
+
+.shop-hero h1{
+  font-size:34px;
+}
+
+.shop-hero p{
+  font-size:16px;
+}
+
+.hero-buttons{
+  flex-direction:column;
+}
+
+.hero-btn{
+  width:100%;
+}
+
+.search-box{
+  flex-direction:column;
+}
+
+.search-box button{
+  width:100%;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header class="site-header">
+
+<a href="index.html" class="brand">
+
+<img src="media/Mavinstech Solution Logo.png"
+alt="Mavinstech Logo">
+
+<div class="brand-text">
+
+<strong>Mavinstech</strong>
+
+<small>Your Creative Tech Partner</small>
+
+</div>
+
+</a>
+
+<nav class="site-nav">
+
+<a href="index.html">Home</a>
+
+<a href="about.html">About</a>
+
+<a href="services.html">Services</a>
+
+<a href="shop.html" class="active">Shop</a>
+
+<a href="contact.html">Contact</a>
+
+<a href="https://wa.me/254740163974"
+class="nav-btn">
+WhatsApp
+</a>
+
+</nav>
+
+</header>
+
+<!-- HERO -->
+
+<section class="shop-hero">
+
+<h1>Premium Printing & Branding Shop</h1>
+
+<p>
+Professional printing, branding, graphic design,
+website development, custom merchandise,
+and digital services for businesses,
+schools, churches, and organizations in Kenya.
+</p>
+
+<div class="hero-buttons">
+
+<a href="https://wa.me/254740163974"
+class="hero-btn hero-btn-primary">
+<i class="fab fa-whatsapp"></i>
+ Order on WhatsApp
+</a>
+
+<a href="#products"
+class="hero-btn hero-btn-secondary">
+<i class="fa-solid fa-store"></i>
+ Explore Products
+</a>
+
+</div>
+
+<div class="search">
+
+<div class="search-box">
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+<input type="text"
+id="search"
+placeholder="Search T-Shirts, Banners, Mugs, Stickers, Websites..."
+onkeyup="searchProduct()">
+
+<button>
+Search
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FILTERS -->
+
+<div class="shop-nav">
+
+<button class="active"
+onclick="filterProducts('all',this)">
+All
+</button>
+
+<button onclick="filterProducts('printing',this)">
+Printing
+</button>
+
+<button onclick="filterProducts('branding',this)">
+Branding
+</button>
+
+<button onclick="filterProducts('digital',this)">
+Digital
+</button>
+
+<button onclick="filterProducts('design',this)">
+Design
+</button>
+
+</div>
+
+<!-- PRODUCTS -->
+
+<div class="container" id="products">
+
+<div class="grid">
+
+<!-- PRODUCT 1 -->
+
+<div class="card printing">
+
+<span class="badge">HOT</span>
+
+<span class="heart"
+onclick="like(this)">♡</span>
+
+<img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=1200&auto=format&fit=crop">
+
+<div class="info">
+
+<h3>T-Shirt Printing</h3>
+
+<p>
+Professional branded T-shirts for events,
+schools and businesses.
+</p>
+
+<p class="price">KSh 500</p>
+
+<button class="btn"
+onclick="order('T-Shirt Printing',500)">
+Order Now
+</button>
+
+</div>
+
+</div>
+
+<!-- PRODUCT 2 -->
+
+<div class="card printing">
+
+<span class="badge" style="background:green;">
+NEW
+</span>
+
+<span class="heart"
+onclick="like(this)">♡</span>
+
+<img src="https://images.unsplash.com/photo-1514228742587-6b1558fcf93a?q=80&w=1200&auto=format&fit=crop">
+
+<div class="info">
+
+<h3>Mug Printing</h3>
+
+<p>
+Custom mugs with logos,
+photos and personalized branding.
+</p>
+
+<p class="price">KSh 300</p>
+
+<button class="btn"
+onclick="order('Mug Printing',300)">
+Order Now
+</button>
+
+</div>
+
+</div>
+
+<!-- PRODUCT 3 -->
+
+<div class="card branding">
+
+<span class="badge">SALE</span>
+
+<span class="heart"
+onclick="like(this)">♡</span>
+
+<img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?q=80&w=1200&auto=format&fit=crop">
+
+<div class="info">
+
+<h3>Banner Printing</h3>
+
+<p>
+High-quality banners for businesses,
+churches and events.
+</p>
+
+<p class="price">KSh 1500</p>
+
+<button class="btn"
+onclick="order('Banner Printing',1500)">
+Order Now
+</button>
+
+</div>
+
+</div>
+
+<!-- PRODUCT 4 -->
+
+<div class="card branding">
+
+<span class="badge" style="background:#111827;">
+TOP
+</span>
+
+<span class="heart"
+onclick="like(this)">♡</span>
+
+<img src="https://images.unsplash.com/photo-1586953208448-b95a79798f07?q=80&w=1200&auto=format&fit=crop">
+
+<div class="info">
+
+<h3>Business Cards</h3>
+
+<p>
+Premium business cards with modern
+professional designs.
+</p>
+
+<p class="price">KSh 1000</p>
+
+<button class="btn"
+onclick="order('Business Cards',1000)">
+Order Now
+</button>
+
+</div>
+
+</div>
+
+<!-- PRODUCT 5 -->
+
+<div class="card branding">
+
+<span class="badge">BEST</span>
+
+<span class="heart"
+onclick="like(this)">♡</span>
+
+<img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1200&auto=format&fit=crop">
+
+<div class="info">
+
+<h3>Sticker Printing</h3>
+
+<p>
+Custom stickers and labels for products,
+shops and packaging.
+</p>
+
+<p class="price">KSh 800</p>
+
+<button class="btn"
+onclick="order('Sticker Printing',800)">
+Order Now
+</button>
+
+</div>
+
+</div>
+
+<!-- PRODUCT 6 -->
+
+<div class="card digital">
+
+<span class="badge" style="background:#2563eb;">
+DIGITAL
+</span>
+
+<span class="heart"
+onclick="like(this)">♡</span>
+
+<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop">
+
+<div class="info">
+
+<h3>Website Design</h3>
+
+<p>
+Modern responsive websites for businesses,
+schools and organizations.
+</p>
+
+<p class="price">KSh 15000</p>
+
+<button class="btn"
+onclick="order('Website Design',15000)">
+Order Now
+</button>
+
+</div>
+
+</div>
+
+<!-- PRODUCT 7 -->
+
+<div class="card design">
+
+<span class="badge" style="background:#9333ea;">
+DESIGN
+</span>
+
+<span class="heart"
+onclick="like(this)">♡</span>
+
+<img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1200&auto=format&fit=crop">
+
+<div class="info">
+
+<h3>Logo Design</h3>
+
+<p>
+Creative logos and complete business
+brand identity design.
+</p>
+
+<p class="price">KSh 2500</p>
+
+<button class="btn"
+onclick="order('Logo Design',2500)">
+Order Now
+</button>
+
+</div>
+
+</div>
+
+<!-- PRODUCT 8 -->
+
+<div class="card printing">
+
+<span class="badge" style="background:#f59e0b;">
+POPULAR
+</span>
+
+<span class="heart"
+onclick="like(this)">♡</span>
+
+<img src="https://images.unsplash.com/photo-1496171367470-9ed9a91ea931?q=80&w=1200&auto=format&fit=crop">
+
+<div class="info">
+
+<h3>Hoodie Branding</h3>
+
+<p>
+Custom hoodies for schools,
+companies and events.
+</p>
+
+<p class="price">KSh 1800</p>
+
+<button class="btn"
+onclick="order('Hoodie Branding',1800)">
+Order Now
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- WHY CHOOSE US -->
+
+<section class="why">
+
+<div class="section-title">
+
+<h2>Why Choose Mavinstech?</h2>
+
+<p>
+We provide modern creative solutions,
+fast delivery, professional customer support,
+and affordable branding services.
+</p>
+
+</div>
+
+<div class="why-grid">
+
+<div class="why-card">
+
+<i class="fa-solid fa-truck-fast"></i>
+
+<h3>Fast Delivery</h3>
+
+<p>
+Quick and reliable printing and branding services.
+</p>
+
+</div>
+
+<div class="why-card">
+
+<i class="fa-solid fa-award"></i>
+
+<h3>Quality Work</h3>
+
+<p>
+Professional high-quality products and designs.
+</p>
+
+</div>
+
+<div class="why-card">
+
+<i class="fa-solid fa-headset"></i>
+
+<h3>24/7 Support</h3>
+
+<p>
+Friendly customer service and support anytime.
+</p>
+
+</div>
+
+<div class="why-card">
+
+<i class="fa-solid fa-wallet"></i>
+
+<h3>Affordable Pricing</h3>
+
+<p>
+Best prices for businesses, schools and organizations.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- TESTIMONIALS -->
+
+<section class="testimonials">
+
+<div class="section-title">
+
+<h2 style="color:white;">
+What Clients Say
+</h2>
+
+<p style="color:#cbd5e1;">
+Trusted by businesses, churches,
+schools and organizations across Kenya.
+</p>
+
+</div>
+
+<div class="testimonial-grid">
+
+<div class="testimonial-card">
+
+<p>
+“Mavinstech designed our banners
+and T-shirts professionally.
+Very fast and reliable service.”
+</p>
+
+<h4>— James Mwangi</h4>
+
+</div>
+
+<div class="testimonial-card">
+
+<p>
+“Our school website and branding
+look modern and professional now.
+Highly recommended.”
+</p>
+
+<h4>— Mary Akinyi</h4>
+
+</div>
+
+<div class="testimonial-card">
+
+<p>
+“Excellent customer support and
+very high-quality printing services.”
+</p>
+
+<h4>— Pastor Kevin</h4>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FLOAT BUTTONS -->
+
+<a class="cart">
+🛒 0
+</a>
+
+<a class="whatsapp"
+href="https://wa.me/254740163974"
+target="_blank">
+
+<i class="fab fa-whatsapp"></i>
+
+</a>
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="footer-grid">
+
+<div class="footer-about">
+
+<h2 class="footer-title">
+Mavinstech Solution
+</h2>
+
+<p>
+Professional Branding, Printing,
+ICT Training, Smartboard Solutions,
+Web Design and Creative Technology Services in Kenya.
+</p>
+
+<div class="socials">
+
+<a href="#"><i class="fab fa-facebook-f"></i></a>
+
+<a href="#"><i class="fab fa-instagram"></i></a>
+
+<a href="#"><i class="fab fa-tiktok"></i></a>
+
+<a href="https://wa.me/254740163974">
+<i class="fab fa-whatsapp"></i>
+</a>
+
+</div>
+
+</div>
+
+<div>
+
+<h3 class="footer-title">
+Quick Links
+</h3>
+
+<div class="footer-links">
+
+<a href="index.html">Home</a>
+
+<a href="about.html">About</a>
+
+<a href="services.html">Services</a>
+
+<a href="shop.html">Shop</a>
+
+<a href="contact.html">Contact</a>
+
+</div>
+
+</div>
+
+<div>
+
+<h3 class="footer-title">
+Our Services
+</h3>
+
+<div class="footer-links">
+
+<a href="#">Printing</a>
+
+<a href="#">Branding</a>
+
+<a href="#">ICT Training</a>
+
+<a href="#">Smartboard Training</a>
+
+<a href="#">Web Design</a>
+
+</div>
+
+</div>
+
+<div>
+
+<h3 class="footer-title">
+Contact Info
+</h3>
+
+<div class="contact-info">
+
+<div>
+<i class="fa-solid fa-location-dot"></i>
+ Mtondia, Kilifi, Kenya
+</div>
+
+<div>
+<i class="fa-solid fa-phone"></i>
+ 0740163974
+</div>
+
+<div>
+<i class="fa-solid fa-phone"></i>
+ 0108740098
+</div>
+
+<div>
+<i class="fa-solid fa-envelope"></i>
+ mavinstechsolution@gmail.com
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="copyright">
+
+© 2026 Mavinstech Solution.
+All Rights Reserved.
+
+</div>
+
+</footer>
+
+<script>
+
+let cartCount = 0;
+
+/* LIKE */
+function like(el){
+
+el.innerText =
+el.innerText === "♡"
+? "❤️"
+: "♡";
+
+}
+
+/* SEARCH */
+function searchProduct(){
+
+let input =
+document.getElementById("search")
+.value
+.toLowerCase();
+
+document.querySelectorAll(".card")
+.forEach(card=>{
+
+let text =
+card.innerText.toLowerCase();
+
+card.style.display =
+text.includes(input)
+? "block"
+: "none";
+
+});
+
+}
+
+/* ORDER */
+function order(product,price){
+
+cartCount++;
+
+document.querySelector(".cart")
+.innerText = "🛒 " + cartCount;
+
+let msg =
+`Hello Mavinstech Solution,%0A%0AI would like to order:%0A${product}%0APrice: KSh ${price}`;
+
+window.open(
+`https://wa.me/254740163974?text=${msg}`
+);
+
+}
+
+/* FILTER */
+function filterProducts(category,btn){
+
+document.querySelectorAll(".card")
+.forEach(card=>{
+
+if(category === "all"){
+
+card.style.display = "block";
+
+}else{
+
+card.style.display =
+card.classList.contains(category)
+? "block"
+: "none";
+
+}
+
+});
+
+document
+.querySelectorAll(".shop-nav button")
+.forEach(b=>b.classList.remove("active"));
+
+btn.classList.add("active");
+
+}
+
+</script>
+
+</body>
+</html>

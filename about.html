@@ -1,0 +1,1154 @@
+<!DOCTYPE html>
+<html lang="en-KE">
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>About Us | Mavinstech Solution Kenya</title>
+
+  <meta
+    name="description"
+    content="Learn about Mavinstech Solution in Kenya. We offer branding, printing, ICT training, smartboard training, digital learning support, web design, and creative digital solutions."
+  />
+
+  <meta
+    name="keywords"
+    content="Mavinstech Solution, branding Kenya, printing Kilifi, ICT training Kenya, logo design Kenya, smartboard training, graphic design, web design Kenya"
+  />
+
+  <meta name="robots" content="index, follow" />
+
+  <!-- GOOGLE FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- FONT AWESOME -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+
+  <style>
+
+    :root{
+      --primary:#2563eb;
+      --primary-dark:#1d4ed8;
+      --dark:#0f172a;
+      --dark2:#020617;
+      --light:#f8fafc;
+      --white:#ffffff;
+      --text:#475569;
+      --border:#e2e8f0;
+    }
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins',sans-serif;
+    }
+
+    html{
+      scroll-behavior:smooth;
+    }
+
+    body{
+      background:var(--light);
+      color:#111827;
+      overflow-x:hidden;
+    }
+
+    img{
+      width:100%;
+      display:block;
+    }
+
+    a{
+      text-decoration:none;
+    }
+
+    .section{
+      padding:100px 7%;
+    }
+
+    .container{
+      max-width:1200px;
+      margin:auto;
+    }
+
+    .section-title{
+      text-align:center;
+      margin-bottom:60px;
+    }
+
+    .section-title h2{
+      font-size:42px;
+      color:var(--dark);
+      margin-bottom:15px;
+      font-weight:800;
+    }
+
+    .section-title p{
+      max-width:760px;
+      margin:auto;
+      line-height:1.9;
+      color:var(--text);
+    }
+
+    /* HEADER */
+
+    header{
+      position:sticky;
+      top:0;
+      z-index:1000;
+      background:rgba(255,255,255,0.92);
+      backdrop-filter:blur(10px);
+      border-bottom:1px solid rgba(226,232,240,0.7);
+
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+
+      padding:18px 7%;
+    }
+
+    .logo{
+      font-size:26px;
+      font-weight:800;
+      color:var(--dark);
+    }
+
+    .logo span{
+      color:var(--primary);
+    }
+
+    nav{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+    }
+
+    nav a{
+      color:#334155;
+      padding:10px 16px;
+      border-radius:12px;
+      transition:0.3s ease;
+      font-size:15px;
+      font-weight:500;
+    }
+
+    nav a:hover,
+    nav a.active{
+      background:#eff6ff;
+      color:var(--primary);
+    }
+
+    /* HERO */
+
+    .hero{
+      position:relative;
+      overflow:hidden;
+      text-align:center;
+      color:white;
+
+      background:
+      linear-gradient(rgba(2,6,23,0.82), rgba(15,23,42,0.92)),
+      url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1400&auto=format&fit=crop') center/cover;
+
+      padding:150px 20px;
+    }
+
+    .hero::before{
+      content:'';
+      position:absolute;
+      width:400px;
+      height:400px;
+      background:rgba(37,99,235,0.25);
+      border-radius:50%;
+      top:-120px;
+      right:-120px;
+      filter:blur(40px);
+    }
+
+    .hero-content{
+      position:relative;
+      z-index:2;
+      max-width:900px;
+      margin:auto;
+    }
+
+    .hero-badge{
+      display:inline-block;
+      padding:12px 20px;
+      border-radius:50px;
+      background:rgba(255,255,255,0.1);
+      border:1px solid rgba(255,255,255,0.15);
+      color:#dbeafe;
+      margin-bottom:25px;
+      backdrop-filter:blur(8px);
+    }
+
+    .hero h1{
+      font-size:64px;
+      line-height:1.1;
+      margin-bottom:25px;
+      font-weight:800;
+    }
+
+    .hero p{
+      font-size:18px;
+      line-height:2;
+      color:#dbeafe;
+      max-width:780px;
+      margin:auto;
+      margin-bottom:40px;
+    }
+
+    .hero-buttons{
+      display:flex;
+      justify-content:center;
+      gap:15px;
+      flex-wrap:wrap;
+    }
+
+    .btn{
+      padding:16px 30px;
+      border-radius:14px;
+      font-weight:600;
+      transition:0.3s ease;
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+    }
+
+    .btn-primary{
+      background:white;
+      color:var(--dark);
+    }
+
+    .btn-primary:hover{
+      transform:translateY(-4px);
+    }
+
+    .btn-secondary{
+      background:rgba(255,255,255,0.1);
+      color:white;
+      border:1px solid rgba(255,255,255,0.2);
+      backdrop-filter:blur(10px);
+    }
+
+    .btn-secondary:hover{
+      background:white;
+      color:var(--dark);
+    }
+
+    /* ABOUT */
+
+    .about-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+      gap:50px;
+      align-items:center;
+    }
+
+    .about-image img{
+      border-radius:28px;
+      box-shadow:0 25px 50px rgba(0,0,0,0.15);
+      height:100%;
+      object-fit:cover;
+    }
+
+    .about-content h3{
+      font-size:38px;
+      margin-bottom:20px;
+      color:var(--dark);
+    }
+
+    .about-content p{
+      line-height:2;
+      color:var(--text);
+      margin-bottom:20px;
+    }
+
+    /* CARDS */
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:28px;
+    }
+
+    .card{
+      background:var(--white);
+      border-radius:24px;
+      padding:35px 30px;
+      border:1px solid var(--border);
+      transition:0.4s ease;
+      position:relative;
+      overflow:hidden;
+      box-shadow:0 10px 30px rgba(0,0,0,0.04);
+    }
+
+    .card::before{
+      content:'';
+      position:absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:4px;
+      background:var(--primary);
+      transform:scaleX(0);
+      transition:0.4s;
+      transform-origin:left;
+    }
+
+    .card:hover::before{
+      transform:scaleX(1);
+    }
+
+    .card:hover{
+      transform:translateY(-10px);
+      box-shadow:0 25px 50px rgba(0,0,0,0.08);
+    }
+
+    .icon{
+      width:72px;
+      height:72px;
+      border-radius:18px;
+      background:#eff6ff;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      margin-bottom:25px;
+      color:var(--primary);
+      font-size:28px;
+    }
+
+    .card h3{
+      margin-bottom:15px;
+      color:var(--dark);
+      font-size:22px;
+    }
+
+    .card p{
+      line-height:1.9;
+      color:var(--text);
+      font-size:15px;
+    }
+
+    /* STATS */
+
+    .stats{
+      background:linear-gradient(135deg,var(--dark2),var(--dark));
+      color:white;
+    }
+
+    .stats-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:25px;
+    }
+
+    .stat-box{
+      text-align:center;
+      padding:40px 20px;
+      background:rgba(255,255,255,0.05);
+      border-radius:24px;
+      border:1px solid rgba(255,255,255,0.08);
+      backdrop-filter:blur(10px);
+    }
+
+    .stat-box h2{
+      font-size:48px;
+      color:#60a5fa;
+      margin-bottom:10px;
+    }
+
+    .stat-box p{
+      color:#cbd5e1;
+    }
+
+    /* TEAM */
+
+    .team-card img{
+      border-radius:20px;
+      margin-bottom:20px;
+      height:280px;
+      object-fit:cover;
+    }
+
+    .team-card h3{
+      margin-bottom:8px;
+    }
+
+    .team-card small{
+      color:var(--primary);
+      font-weight:600;
+    }
+
+    /* CTA */
+
+    .cta{
+      background:
+      linear-gradient(rgba(37,99,235,0.9), rgba(15,23,42,0.92)),
+      url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1400&auto=format&fit=crop') center/cover;
+
+      color:white;
+      text-align:center;
+    }
+
+    .cta h2{
+      font-size:50px;
+      margin-bottom:20px;
+      font-weight:800;
+    }
+
+    .cta p{
+      max-width:750px;
+      margin:auto;
+      line-height:2;
+      color:#dbeafe;
+      margin-bottom:35px;
+    }
+
+    /* FOOTER */
+
+    footer{
+      background:linear-gradient(135deg,var(--dark2),var(--dark));
+      color:#cbd5e1;
+      padding:90px 7% 30px;
+    }
+
+    .footer-grid{
+      max-width:1200px;
+      margin:auto;
+
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+      gap:50px;
+    }
+
+    .footer-title{
+      color:white;
+      margin-bottom:20px;
+      font-size:22px;
+      font-weight:700;
+    }
+
+    .footer-about p,
+    .footer-links a,
+    .contact-info{
+      color:#94a3b8;
+      line-height:1.9;
+      font-size:14px;
+    }
+
+    .footer-links{
+      display:flex;
+      flex-direction:column;
+      gap:12px;
+    }
+
+    .footer-links a{
+      transition:0.3s;
+    }
+
+    .footer-links a:hover{
+      color:white;
+      padding-left:6px;
+    }
+
+    .socials{
+      display:flex;
+      gap:12px;
+      margin-top:25px;
+    }
+
+    .socials a{
+      width:44px;
+      height:44px;
+      border-radius:50%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      background:#1e293b;
+      color:white;
+      transition:0.3s;
+    }
+
+    .socials a:hover{
+      background:var(--primary);
+      transform:translateY(-4px);
+    }
+
+    .contact-info{
+      display:flex;
+      flex-direction:column;
+      gap:15px;
+    }
+
+    .contact-info a{
+      color:#94a3b8;
+    }
+
+    .copyright{
+      text-align:center;
+      margin-top:60px;
+      padding-top:25px;
+      border-top:1px solid rgba(255,255,255,0.08);
+      color:#64748b;
+      font-size:14px;
+    }
+
+    /* FLOATING WHATSAPP */
+
+    .floating-whatsapp{
+      position:fixed;
+      right:20px;
+      bottom:20px;
+      width:60px;
+      height:60px;
+      border-radius:50%;
+      background:#25d366;
+      color:white;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:30px;
+      z-index:1000;
+      box-shadow:0 15px 30px rgba(0,0,0,0.2);
+    }
+
+    /* RESPONSIVE */
+
+    @media(max-width:900px){
+
+      header{
+        flex-direction:column;
+        gap:15px;
+      }
+
+      .hero h1{
+        font-size:46px;
+      }
+
+      .section-title h2,
+      .cta h2{
+        font-size:34px;
+      }
+
+    }
+
+    @media(max-width:600px){
+
+      .hero{
+        padding:120px 20px;
+      }
+
+      .hero h1{
+        font-size:38px;
+      }
+
+      nav{
+        justify-content:center;
+      }
+
+      .section{
+        padding:80px 6%;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <!-- HEADER -->
+
+  <header>
+
+    <div class="logo">
+      Mavins<span>tech</span> Solution
+    </div>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html" class="active">About</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+  </header>
+
+  <!-- HERO -->
+
+  <section class="hero">
+
+    <div class="hero-content">
+
+      <div class="hero-badge">
+        Creative Branding • ICT Training • Digital Innovation
+      </div>
+
+      <h1>
+        Transforming Ideas Into Powerful Digital Experiences
+      </h1>
+
+      <p>
+        Mavinstech Solution is a creative technology and branding company in Kenya helping businesses,
+        schools, churches, organizations, and individuals grow through professional branding,
+        printing, ICT training, smartboard support, digital learning, and modern technology solutions.
+      </p>
+
+      <div class="hero-buttons">
+
+        <a href="https://wa.me/254740163974" class="btn btn-primary">
+          <i class="fab fa-whatsapp"></i>
+          Chat on WhatsApp
+        </a>
+
+        <a href="services.html" class="btn btn-secondary">
+          <i class="fa-solid fa-briefcase"></i>
+          Explore Services
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ABOUT -->
+
+  <section class="section">
+
+    <div class="container about-grid">
+
+      <div class="about-image">
+
+        <img
+          src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop"
+          alt="Mavinstech Team"
+          loading="lazy"
+        />
+
+      </div>
+
+      <div class="about-content">
+
+        <h3>
+          Empowering Communities Through Technology & Creativity
+        </h3>
+
+        <p>
+          Mavinstech Solution was established with the vision of helping businesses and communities embrace technology,
+          creativity, and innovation. We combine modern digital tools with creative thinking to deliver impactful solutions.
+        </p>
+
+        <p>
+          From branding and professional printing to ICT training and smart classroom support,
+          we are passionate about creating opportunities through technology and digital transformation.
+        </p>
+
+        <p>
+          Our mission is to deliver high-quality services that inspire growth, professionalism,
+          creativity, and digital empowerment across Kenya.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- VALUES -->
+
+  <section class="section">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <h2>What We Stand For</h2>
+
+        <p>
+          We are driven by innovation, creativity, professionalism, and a passion for empowering others.
+        </p>
+
+      </div>
+
+      <div class="grid">
+
+        <div class="card">
+
+          <div class="icon">
+            <i class="fa-solid fa-palette"></i>
+          </div>
+
+          <h3>Creative Branding</h3>
+
+          <p>
+            We design modern logos, posters, banners, business cards,
+            merchandise, and professional brand identities.
+          </p>
+
+        </div>
+
+        <div class="card">
+
+          <div class="icon">
+            <i class="fa-solid fa-laptop-code"></i>
+          </div>
+
+          <h3>Digital Innovation</h3>
+
+          <p>
+            We provide modern digital solutions including websites,
+            online branding, digital marketing support, and tech consulting.
+          </p>
+
+        </div>
+
+        <div class="card">
+
+          <div class="icon">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+
+          <h3>ICT Training</h3>
+
+          <p>
+            We equip students, teachers, youth, and professionals
+            with practical computer and digital literacy skills.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- WHY CHOOSE US -->
+
+  <section class="section" style="background:white;">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <h2>Why Choose Mavinstech Solution</h2>
+
+        <p>
+          We focus on quality, professionalism, creativity, and customer satisfaction.
+        </p>
+
+      </div>
+
+      <div class="grid">
+
+        <div class="card">
+          <div class="icon">
+            <i class="fa-solid fa-clock"></i>
+          </div>
+          <h3>Fast Delivery</h3>
+          <p>
+            We complete projects quickly while maintaining professional quality.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="icon">
+            <i class="fa-solid fa-award"></i>
+          </div>
+          <h3>Professional Quality</h3>
+          <p>
+            We deliver premium branding, printing, and digital services.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="icon">
+            <i class="fa-solid fa-headset"></i>
+          </div>
+          <h3>Reliable Support</h3>
+          <p>
+            Our team is always ready to support and guide clients professionally.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- STATS -->
+
+  <section class="section stats">
+
+    <div class="container stats-grid">
+
+      <div class="stat-box">
+        <h2>150+</h2>
+        <p>Creative Projects Completed</p>
+      </div>
+
+      <div class="stat-box">
+        <h2>80+</h2>
+        <p>Happy Clients Supported</p>
+      </div>
+
+      <div class="stat-box">
+        <h2>15+</h2>
+        <p>Digital Services Offered</p>
+      </div>
+
+      <div class="stat-box">
+        <h2>24/7</h2>
+        <p>Customer Support</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- SERVICES -->
+
+  <section class="section">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <h2>Our Core Services</h2>
+
+        <p>
+          We offer professional digital and creative solutions tailored for businesses and institutions.
+        </p>
+
+      </div>
+
+      <div class="grid">
+
+        <div class="card">
+          <h3>Branding & Printing</h3>
+          <p>
+            T-shirt branding, mug printing, receipt books, banners,
+            business cards, certificates, stickers, flyers, and more.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Graphic Design</h3>
+          <p>
+            Logo design, social media posters, company profiles,
+            event banners, and professional creative content.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>ICT & Computer Training</h3>
+          <p>
+            Basic computer packages, coding lessons,
+            digital literacy, and technology mentorship.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Smartboard Training</h3>
+          <p>
+            Smart classroom setup, teacher training,
+            and virtual learning support.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Kolibri Learning Support</h3>
+          <p>
+            Offline digital learning setup and educational content integration.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Web Design</h3>
+          <p>
+            Modern responsive websites for businesses,
+            schools, organizations, and startups.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- TEAM -->
+
+  <section class="section" style="background:white;">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <h2>Meet Our Team</h2>
+
+        <p>
+          Passionate creatives, innovators, and technology professionals.
+        </p>
+
+      </div>
+
+      <div class="grid">
+
+        <div class="card team-card">
+
+          <img
+            src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1200&auto=format&fit=crop"
+            alt="Founder"
+            loading="lazy"
+          />
+
+          <h3>Mavins Victor</h3>
+
+          <small>Founder & Creative Director</small>
+
+          <p style="margin-top:15px;">
+            Passionate about technology, branding, digital empowerment,
+            and helping communities grow through innovation.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- TESTIMONIALS -->
+
+  <section class="section">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <h2>What Clients Say</h2>
+
+        <p>
+          We are proud to work with businesses, schools, and organizations across Kenya.
+        </p>
+
+      </div>
+
+      <div class="grid">
+
+        <div class="card">
+
+          <p>
+            “Mavinstech Solution designed our branding professionally and delivered on time.
+            Their work exceeded our expectations.”
+          </p>
+
+          <h3 style="margin-top:20px;">— Local Business Owner</h3>
+
+        </div>
+
+        <div class="card">
+
+          <p>
+            “Excellent ICT training and digital support.
+            Our students benefited greatly from the training sessions.”
+          </p>
+
+          <h3 style="margin-top:20px;">— School Administrator</h3>
+
+        </div>
+
+        <div class="card">
+
+          <p>
+            “Professional customer service, quality printing,
+            and modern creative designs. Highly recommended.”
+          </p>
+
+          <h3 style="margin-top:20px;">— Organization Leader</h3>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- CTA -->
+
+  <section class="section cta">
+
+    <div class="container">
+
+      <h2>
+        Let’s Build Something Amazing Together
+      </h2>
+
+      <p>
+        Whether you need branding, printing, digital solutions,
+        ICT training, or creative design services,
+        Mavinstech Solution is ready to help your vision grow.
+      </p>
+
+      <div class="hero-buttons">
+
+        <a href="https://wa.me/254740163974" class="btn btn-primary">
+          <i class="fab fa-whatsapp"></i>
+          Start a Project
+        </a>
+
+        <a href="contact.html" class="btn btn-secondary">
+          <i class="fa-solid fa-envelope"></i>
+          Contact Us
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <div class="footer-grid">
+
+      <div class="footer-about">
+
+        <h2 class="footer-title">
+          Mavinstech Solution
+        </h2>
+
+        <p>
+          Professional branding, printing, ICT training,
+          smartboard support, digital learning,
+          and innovative technology solutions in Kenya.
+        </p>
+
+        <div class="socials">
+
+          <a href="https://facebook.com" target="_blank">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+
+          <a href="https://instagram.com" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+
+          <a href="https://twitter.com" target="_blank">
+            <i class="fab fa-x-twitter"></i>
+          </a>
+
+          <a href="https://wa.me/254740163974" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+
+        </div>
+
+      </div>
+
+      <div>
+
+        <h3 class="footer-title">Quick Links</h3>
+
+        <div class="footer-links">
+
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="services.html">Services</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="contact.html">Contact</a>
+
+        </div>
+
+      </div>
+
+      <div>
+
+        <h3 class="footer-title">Our Services</h3>
+
+        <div class="footer-links">
+
+          <a href="#">Logo & Brand Design</a>
+          <a href="#">Printing & Merchandise</a>
+          <a href="#">Graphic Design</a>
+          <a href="#">ICT Training</a>
+          <a href="#">Smartboard Training</a>
+          <a href="#">Web Design</a>
+
+        </div>
+
+      </div>
+
+      <div>
+
+        <h3 class="footer-title">Contact Info</h3>
+
+        <div class="contact-info">
+
+          <div>
+            <i class="fa-solid fa-location-dot"></i>
+            Mtondia, Kilifi, Kenya
+          </div>
+
+          <div>
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:+254740163974">
+              0740163974
+            </a>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:mavinstechsolution@gmail.com">
+              mavinstechsolution@gmail.com
+            </a>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-clock"></i>
+            Monday - Saturday : 8:00 AM - 6:00 PM
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="copyright">
+      © 2026 Mavinstech Solution. All Rights Reserved.
+    </div>
+
+  </footer>
+
+  <!-- FLOATING WHATSAPP -->
+
+  <a href="https://wa.me/254740163974" class="floating-whatsapp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+</body>
+</html>
+```
