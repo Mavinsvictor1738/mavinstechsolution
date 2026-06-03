@@ -383,81 +383,814 @@ A showcase of quality work delivered by Mavinstech Solution.
 </div>
 
 <div class="portfolio-grid">
-
+<!-- =========================
+   PORTFOLIO CARD
+========================= -->
 <div class="portfolio-item" data-category="branding">
-<img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=900&q=80">
-<div class="portfolio-content">
-<span class="tag">Branding</span>
-<h3>Logo Design</h3>
-<p>Professional logo and business identity creation.</p>
-</div>
+
+  <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=900&q=80" alt="Logo Design">
+
+  <div class="portfolio-content">
+    <span class="tag">Branding</span>
+    <h3>Logo Design</h3>
+   <p>Creative logo design that defines and strengthens your brand identity.</p>
+
+    <button class="pro-btn" onclick="openLogoModal()">
+      View Insights
+    </button>
+  </div>
+
 </div>
 
+<!-- =========================
+   MODAL
+========================= -->
+<div id="logoModal" class="modal">
+
+  <div class="modal-card">
+
+    <span class="close-btn" onclick="closeLogoModal()">&times;</span>
+
+    <h2>Logo Design & Brand Identity</h2>
+
+    <p class="subtitle">
+      Creative and professional logo design services that help businesses, schools, NGOs, and organizations build a strong and memorable brand identity.
+    </p>
+
+    <div class="modal-section">
+      <h3>🎨 Services Offered</h3>
+      <ul>
+        <li>Custom logo design (modern, minimalist, corporate).</li>
+        <li>Full brand identity creation.</li>
+        <li>Logo redesign and rebranding.</li>
+        <li>Color palette and typography selection.</li>
+        <li>Print and digital-ready logo files.</li>
+      </ul>
+    </div>
+
+    <div class="modal-section">
+      <h3>✨ Key Features</h3>
+      <ul>
+        <li>Unique and original designs.</li>
+        <li>High-quality vector formats.</li>
+        <li>Scalable for all platforms.</li>
+        <li>Brand-consistent visual identity.</li>
+        <li>Suitable for all industries.</li>
+      </ul>
+    </div>
+
+    <div class="modal-section">
+      <h3>🚀 Benefits</h3>
+      <ul>
+        <li>Builds strong brand recognition.</li>
+        <li>Creates a professional business image.</li>
+        <li>Improves trust and credibility.</li>
+        <li>Enhances marketing effectiveness.</li>
+        <li>Helps your business stand out.</li>
+      </ul>
+    </div>
+
+    <button class="close-action" onclick="closeLogoModal()">
+      Close
+    </button>
+
+  </div>
+
+</div>
+
+<!-- =========================
+   JAVASCRIPT
+========================= -->
+<script>
+function openLogoModal(){
+  document.getElementById("logoModal").style.display = "flex";
+}
+
+function closeLogoModal(){
+  document.getElementById("logoModal").style.display = "none";
+}
+
+window.addEventListener("click", function(e){
+  const modal = document.getElementById("logoModal");
+  if(e.target === modal){
+    closeLogoModal();
+  }
+});
+</script>
+
+
+<!-- =========================
+   PORTFOLIO CARD
+========================= -->
 <div class="portfolio-item" data-category="branding">
-<img src="media/Business cards.jpg">
-<div class="portfolio-content">
-<span class="tag">Branding</span>
-<h3>Business Cards</h3>
-<p>Corporate branding and marketing materials.</p>
-</div>
+
+  <img src="media/Business cards.jpg">
+    <h3>Business Cards</h3>
+    <p>Professional business card design that strengthens your brand identity.</p>
+
+    <button class="pro-btn" onclick="openCardModal()">
+      View Insights
+    </button>
+  </div>
+
 </div>
 
+<!-- =========================
+   MODAL
+========================= -->
+<div id="cardModal" class="modal">
+
+  <div class="modal-card">
+
+    <span class="close-btn" onclick="closeCardModal()">&times;</span>
+
+    <h2>Business Cards Design & Branding</h2>
+
+    <p class="subtitle">
+      Professional business card design services that help individuals and organizations create a strong first impression and build a memorable brand identity.
+    </p>
+
+    <div class="modal-section">
+      <h3>🪪 Services Offered</h3>
+      <ul>
+        <li>Corporate business card design.</li>
+        <li>Personal and professional branding cards.</li>
+        <li>Minimalist, modern and luxury card styles.</li>
+        <li>Double-sided and custom layout designs.</li>
+        <li>Print-ready files for high-quality production.</li>
+      </ul>
+    </div>
+
+    <div class="modal-section">
+      <h3>✨ Key Features</h3>
+      <ul>
+        <li>Clean and professional visual identity.</li>
+        <li>Custom branding aligned with your business.</li>
+        <li>High-resolution print quality designs.</li>
+        <li>Unique and creative layouts.</li>
+        <li>Suitable for all industries and professionals.</li>
+      </ul>
+    </div>
+
+    <div class="modal-section">
+      <h3>🎯 Ideal For</h3>
+      <ul>
+        <li>Business owners and entrepreneurs.</li>
+        <li>Corporate staff and professionals.</li>
+        <li>Freelancers and creatives.</li>
+        <li>NGOs and organizations.</li>
+        <li>Startups and growing businesses.</li>
+      </ul>
+    </div>
+
+    <button class="close-action" onclick="closeCardModal()">
+      Close
+    </button>
+
+  </div>
+
+</div>
+
+<!-- =========================
+   JAVASCRIPT
+========================= -->
+<script>
+function openCardModal(){
+  document.getElementById("cardModal").style.display = "flex";
+}
+
+function closeCardModal(){
+  document.getElementById("cardModal").style.display = "none";
+}
+
+window.addEventListener("click", function(e){
+  const modal = document.getElementById("cardModal");
+  if(e.target === modal){
+    closeCardModal();
+  }
+});
+</script>
+
+<!-- =========================
+   PORTFOLIO CARD
+========================= -->
 <div class="portfolio-item" data-category="printing">
-<img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?auto=format&fit=crop&w=900&q=80">
-<div class="portfolio-content">
-<span class="tag">Printing</span>
-<h3>T-Shirt Branding</h3>
-<p>Custom branded apparel and merchandise.</p>
-</div>
+
+  <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?auto=format&fit=crop&w=900&q=80" alt="T-Shirt Branding">
+
+  <div class="portfolio-content">
+    <span class="tag">Printing</span>
+    <h3>T-Shirt Branding</h3>
+   <p>Custom branded apparel that promotes your identity and brand.</p>
+
+    <button class="pro-btn" onclick="openTshirtModal()">
+      View Insights
+    </button>
+  </div>
+
 </div>
 
+<!-- =========================
+   MODAL
+========================= -->
+<div id="tshirtModal" class="modal">
+
+  <div class="modal-card">
+
+    <span class="close-btn" onclick="closeTshirtModal()">&times;</span>
+
+    <h2>T-Shirt Branding</h2>
+
+    <p class="subtitle">
+      Professional custom apparel branding solutions that help businesses, schools, churches, NGOs, and event organizers showcase their identity with style and impact.
+    </p>
+
+    <div class="modal-section">
+      <h3>👕 Branding Services</h3>
+      <ul>
+        <li>Corporate and staff branded T-shirts.</li>
+        <li>Event and promotional apparel.</li>
+        <li>School clubs and sports team uniforms.</li>
+        <li>Church and ministry branded clothing.</li>
+        <li>Custom merchandise for campaigns and organizations.</li>
+      </ul>
+    </div>
+
+    <div class="modal-section">
+      <h3>✨ Key Features</h3>
+      <ul>
+        <li>High-quality printing and finishing.</li>
+        <li>Custom logos, text, and graphics.</li>
+        <li>Available in various colors and sizes.</li>
+        <li>Durable and long-lasting designs.</li>
+        <li>Suitable for small and bulk orders.</li>
+      </ul>
+    </div>
+
+    <div class="modal-section">
+      <h3>🎯 Ideal For</h3>
+      <ul>
+        <li>Businesses and corporate teams.</li>
+        <li>Schools, colleges, and universities.</li>
+        <li>Churches and faith-based organizations.</li>
+        <li>NGOs and community groups.</li>
+        <li>Events, campaigns, and promotional activities.</li>
+      </ul>
+    </div>
+
+    <button class="close-action" onclick="closeTshirtModal()">
+      Close
+    </button>
+
+  </div>
+
+</div>
+
+<!-- =========================
+   JAVASCRIPT
+========================= -->
+<script>
+function openTshirtModal(){
+  document.getElementById("tshirtModal").style.display = "flex";
+}
+
+function closeTshirtModal(){
+  document.getElementById("tshirtModal").style.display = "none";
+}
+
+window.addEventListener("click", function(e){
+  const modal = document.getElementById("tshirtModal");
+  if(e.target === modal){
+    closeTshirtModal();
+  }
+});
+</script>
+
+
+  <!-- =========================
+   PORTFOLIO CARD
+========================= -->
 <div class="portfolio-item" data-category="printing">
-<img src="media/Large format prints.jpg">
-<div class="portfolio-content">
-<span class="tag">Printing</span>
-<h3>Banner Printing</h3>
-<p>Large format banners and promotional displays.</p>
-</div>
+
+ <img src="media/Large format prints.jpg">
+  <div class="portfolio-content">
+    <span class="tag">Printing</span>
+    <h3>Banner Printing</h3>
+    <p>High-quality banners for events, businesses and promotions.</p>
+
+    <button class="pro-btn" onclick="openBannerModal()">
+      View Insights
+    </button>
+  </div>
+
 </div>
 
+<!-- =========================
+   MODAL
+========================= -->
+<div id="bannerModal" class="modal">
+
+  <div class="modal-card">
+
+    <span class="close-btn" onclick="closeBannerModal()">&times;</span>
+
+    <h2>Banner Printing</h2>
+
+    <p class="subtitle">
+      Professional large-format printing solutions designed to help businesses, schools, churches, NGOs, and organizations promote their brand with maximum visibility.
+    </p>
+
+    <div class="modal-section">
+      <h3>🖨️ Printing Services</h3>
+      <ul>
+        <li>Business promotional banners.</li>
+        <li>Church and event banners.</li>
+        <li>School branding and educational displays.</li>
+        <li>Roll-up banners and exhibition displays.</li>
+        <li>Outdoor and indoor advertising banners.</li>
+      </ul>
+    </div>
+
+    <div class="modal-section">
+      <h3>✨ Key Features</h3>
+      <ul>
+        <li>High-resolution full-color printing.</li>
+        <li>Durable materials for long-lasting use.</li>
+        <li>Custom sizes and designs available.</li>
+        <li>Professional finishing and mounting options.</li>
+        <li>Suitable for both indoor and outdoor environments.</li>
+      </ul>
+    </div>
+
+    <div class="modal-section">
+      <h3>🎯 Ideal For</h3>
+      <ul>
+        <li>Businesses and corporate events.</li>
+        <li>Schools and educational institutions.</li>
+        <li>Churches and ministries.</li>
+        <li>NGOs and community organizations.</li>
+        <li>Trade shows, exhibitions, and promotions.</li>
+      </ul>
+    </div>
+
+    <button class="close-action" onclick="closeBannerModal()">
+      Close
+    </button>
+
+  </div>
+
+</div>
+
+<!-- =========================
+   JAVASCRIPT
+========================= -->
+<script>
+function openBannerModal(){
+  document.getElementById("bannerModal").style.display = "flex";
+}
+
+function closeBannerModal(){
+  document.getElementById("bannerModal").style.display = "none";
+}
+
+window.addEventListener("click", function(e){
+  const modal = document.getElementById("bannerModal");
+  if(e.target === modal){
+    closeBannerModal();
+  }
+});
+</script>
+
+<!-- =========================
+   PORTFOLIO CARD
+========================= -->
 <div class="portfolio-item" data-category="training">
-<img src="media/ICT.jpg">
-<div class="portfolio-content">
-<span class="tag">Training</span>
-<h3>ICT Training</h3>
-<p>Computer literacy and digital skills training.</p>
-</div>
+
+  <img src="mediia/ICT.jpg">
+
+  <div class="portfolio-content">
+    <span class="tag">Training</span>
+    <h3>ICT Training</h3>
+   <p>Empowering learners with practical digital and computer skills.</p>
+    <button class="pro-btn" onclick="openICTModal()">
+      View Insights
+    </button>
+  </div>
+
 </div>
 
+<!-- =========================
+   MODAL
+========================= -->
+<div id="ictModal" class="modal">
+
+  <div class="modal-card">
+
+    <span class="close-btn" onclick="closeICTModal()">&times;</span>
+
+    <h2>ICT Training</h2>
+
+    <p class="subtitle">
+      Practical technology training designed to equip learners, professionals, and organizations with essential digital skills for education, employment, and productivity.
+    </p>
+
+    <div class="modal-section">
+      <h3>💻 Training Areas</h3>
+      <ul>
+        <li>Computer fundamentals and digital literacy.</li>
+        <li>Microsoft Word, Excel, PowerPoint, and Publisher.</li>
+        <li>Internet and email communication skills.</li>
+        <li>Online collaboration and productivity tools.</li>
+        <li>Introduction to coding and web development.</li>
+      </ul>
+    </div>
+
+    <div class="modal-section">
+      <h3>🚀 Skills Gained</h3>
+      <ul>
+        <li>Confidence in using computers and digital devices.</li>
+        <li>Improved workplace productivity and efficiency.</li>
+        <li>Enhanced communication and collaboration skills.</li>
+        <li>Digital problem-solving and critical thinking.</li>
+        <li>Preparation for academic and career opportunities.</li>
+      </ul>
+    </div>
+
+    <div class="modal-section">
+      <h3>🎯 Ideal For</h3>
+      <ul>
+        <li>Students and young professionals.</li>
+        <li>Teachers and educators.</li>
+        <li>Community groups and NGOs.</li>
+        <li>Business owners and employees.</li>
+        <li>Anyone seeking practical digital skills.</li>
+      </ul>
+    </div>
+
+    <button class="close-action" onclick="closeICTModal()">
+      Close
+    </button>
+
+  </div>
+
+</div>
+
+<!-- =========================
+   JAVASCRIPT
+========================= -->
+<script>
+function openICTModal(){
+  document.getElementById("ictModal").style.display = "flex";
+}
+
+function closeICTModal(){
+  document.getElementById("ictModal").style.display = "none";
+}
+
+window.addEventListener("click", function(e){
+  const modal = document.getElementById("ictModal");
+  if(e.target === modal){
+    closeICTModal();
+  }
+});
+</script>
+
+<!-- =========================
+   PORTFOLIO ITEM
+========================= -->
 <div class="portfolio-item" data-category="training">
-<img src="media/smartboard.jpg">
-<div class="portfolio-content">
-<span class="tag">Training</span>
-<h3>Smartboard Training</h3>
-<p>Interactive classroom technology training</p>
-</div>
+
+  <img src="media/smartboard.jpg" alt="Smartboard Training">
+
+  <div class="portfolio-content">
+    <span class="tag">Training</span>
+    <h3>Smartboard Training</h3>
+    <p>Interactive classroom technology training</p>
+
+    <button class="pro-btn" onclick="openNotes()">
+      View Insights
+    </button>
+  </div>
 </div>
 
+<!-- =========================
+   MODAL
+========================= -->
+<div id="notesModal" class="modal">
+
+  <div class="modal-card">
+
+    <span class="close-btn" onclick="closeNotes()">&times;</span>
+
+    <h2>Smartboard Training Insights</h2>
+    <p class="subtitle">Key notes & professional recommendations</p>
+
+    <div class="modal-section">
+      <h3>📌 Key Notes</h3>
+      <ul>
+        <li>Calibrate smartboard before every session for accuracy.</li>
+        <li>Use interactive annotation tools to boost engagement.</li>
+        <li>Integrate videos and visuals for better understanding.</li>
+        <li>Encourage student participation directly on the board.</li>
+      </ul>
+    </div>
+
+    <div class="modal-section">
+      <h3>💡 Recommendations</h3>
+      <ul>
+        <li>Combine with Google Classroom or LMS platforms.</li>
+        <li>Keep firmware and software updated regularly.</li>
+        <li>Train teachers on advanced touch gestures.</li>
+        <li>Use structured lesson templates for consistency.</li>
+      </ul>
+    </div>
+
+    <button class="close-action" onclick="closeNotes()">Close</button>
+
+  </div>
+</div>
+
+<!-- =========================
+   JAVASCRIPT
+========================= -->
+<script>
+function openNotes(){
+  document.getElementById("notesModal").style.display = "flex";
+}
+
+function closeNotes(){
+  document.getElementById("notesModal").style.display = "none";
+}
+
+window.addEventListener("click", function(e){
+  const modal = document.getElementById("notesModal");
+  if(e.target === modal){
+    closeNotes();
+  }
+});
+</script>
+<!-- =========================
+   PORTFOLIO CARD
+========================= -->
 <div class="portfolio-item" data-category="technology">
-<img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=900&q=80">
-<div class="portfolio-content">
-<span class="tag">Technology</span>
-<h3>Website Development</h3>
-<p>Professional responsive business websites.</p>
-</div>
+
+  <img src="media/stem-robotics.jpg" alt="Scratch Programming & STEM Robotics">
+
+  <div class="portfolio-content">
+    <span class="tag">Technology</span>
+    <h3>Scratch Programming & STEM Robotics</h3>
+    <p>Creative coding, robotics and innovation training</p>
+
+    <button class="pro-btn" onclick="openStemModal()">
+      View Insights
+    </button>
+  </div>
+
 </div>
 
+<!-- =========================
+   MODAL
+========================= -->
+<div id="stemModal" class="modal">
+
+  <div class="modal-card">
+
+    <span class="close-btn" onclick="closeStemModal()">&times;</span>
+
+    <h2>Scratch Programming & STEM Robotics</h2>
+    <p class="subtitle">Building future innovators through coding and hands-on STEM learning</p>
+
+    <div class="modal-section">
+      <h3>🚀 Key Learning Areas</h3>
+      <ul>
+        <li>Scratch game development and animation design.</li>
+        <li>Block-based coding and computational thinking.</li>
+        <li>Interactive STEM projects and innovation challenges.</li>
+        <li>Introduction to robotics concepts and simulations.</li>
+        <li>Problem-solving through creative technology activities.</li>
+      </ul>
+    </div>
+
+    <div class="modal-section">
+      <h3>💡 Program Benefits</h3>
+      <ul>
+        <li>Develops logical thinking and creativity.</li>
+        <li>Enhances digital literacy and coding skills.</li>
+        <li>Encourages teamwork and collaboration.</li>
+        <li>Builds confidence through project-based learning.</li>
+        <li>Prepares learners for future technology careers.</li>
+      </ul>
+    </div>
+
+    <div class="modal-section">
+      <h3>🎯 Ideal For</h3>
+      <ul>
+        <li>Primary and secondary school students.</li>
+        <li>STEM clubs and innovation hubs.</li>
+        <li>Schools introducing coding and robotics programs.</li>
+        <li>Learners aged 7–16 interested in technology.</li>
+      </ul>
+    </div>
+
+    <button class="close-action" onclick="closeStemModal()">
+      Close
+    </button>
+
+  </div>
+
+</div>
+
+<!-- =========================
+   JAVASCRIPT
+========================= -->
+<script>
+function openStemModal(){
+  document.getElementById("stemModal").style.display = "flex";
+}
+
+function closeStemModal(){
+  document.getElementById("stemModal").style.display = "none";
+}
+
+window.addEventListener("click", function(e){
+  const modal = document.getElementById("stemModal");
+  if(e.target === modal){
+    closeStemModal();
+  }
+});
+</script>
+<!-- =========================
+   PORTFOLIO CARD
+========================= -->
 <div class="portfolio-item" data-category="technology">
-<img src="media/Kolibri.jpg">
-<div class="portfolio-content">
-<span class="tag">Technology</span>
-<h3>Kolibri Learning</h3>
-<p>Offline digital learning platform support.</p>
-</div>
-</div>
+
+  <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=900&q=80" alt="Website Development">
+
+  <div class="portfolio-content">
+    <span class="tag">Technology</span>
+    <h3>Website Development</h3>
+    <p>Professional responsive business websites.</p>
+
+    <button class="pro-btn" onclick="openWebModal()">
+      View Insights
+    </button>
+  </div>
 
 </div>
 
+<!-- =========================
+   MODAL
+========================= -->
+<div id="webModal" class="modal">
+
+  <div class="modal-card">
+
+    <span class="close-btn" onclick="closeWebModal()">&times;</span>
+
+    <h2>Website Development</h2>
+    <p class="subtitle">
+      Modern, responsive and user-friendly websites tailored for businesses, schools, NGOs, churches and organizations.
+    </p>
+
+    <div class="modal-section">
+      <h3>🌐 Services Offered</h3>
+      <ul>
+        <li>Business and corporate websites.</li>
+        <li>School and educational institution websites.</li>
+        <li>Portfolio and personal branding websites.</li>
+        <li>NGO and church websites.</li>
+        <li>Landing pages and promotional websites.</li>
+      </ul>
+    </div>
+
+    <div class="modal-section">
+      <h3>⚙️ Key Features</h3>
+      <ul>
+        <li>Fully responsive design for all devices.</li>
+        <li>Fast-loading and optimized pages.</li>
+        <li>Professional UI/UX design.</li>
+        <li>Contact forms and social media integration.</li>
+        <li>SEO-friendly structure for better visibility.</li>
+      </ul>
+    </div>
+
+    <div class="modal-section">
+      <h3>🚀 Benefits</h3>
+      <ul>
+        <li>Strengthens your online presence.</li>
+        <li>Improves customer engagement.</li>
+        <li>Showcases products and services professionally.</li>
+        <li>Builds credibility and trust.</li>
+        <li>Supports business growth and digital transformation.</li>
+      </ul>
+    </div>
+
+    <button class="close-action" onclick="closeWebModal()">
+      Close
+    </button>
+
+  </div>
+
+</div>
+
+<!-- =========================
+   JAVASCRIPT
+========================= -->
+
+<!-- =========================
+   PORTFOLIO CARD
+========================= -->
+<div class="portfolio-item" data-category="technology">
+
+  <img src="media/kolibri.jpg">
+
+  <div class="portfolio-content">
+    <span class="tag">Technology</span>
+    <h3>Kolibri Learning</h3>
+    <p>Offline digital learning platform support.</p>
+
+    <button class="pro-btn" onclick="openKolibriModal()">
+      View Insights
+    </button>
+  </div>
+
+</div>
+
+<!-- =========================
+   MODAL
+========================= -->
+<div id="kolibriModal" class="modal">
+
+  <div class="modal-card">
+
+    <span class="close-btn" onclick="closeKolibriModal()">&times;</span>
+
+    <h2>Kolibri Learning Solutions</h2>
+
+    <p class="subtitle">
+      Empowering schools and learning institutions with offline digital education through Kolibri implementation, training, and support.
+    </p>
+
+    <div class="modal-section">
+      <h3>📚 Services Offered</h3>
+      <ul>
+        <li>Kolibri installation and configuration.</li>
+        <li>Teacher and administrator training.</li>
+        <li>Offline content deployment and management.</li>
+        <li>Learning device setup and support.</li>
+        <li>Digital classroom integration.</li>
+      </ul>
+    </div>
+
+    <div class="modal-section">
+      <h3>💡 Key Benefits</h3>
+      <ul>
+        <li>Access quality learning resources without internet.</li>
+        <li>Supports self-paced and blended learning.</li>
+        <li>Improves digital literacy among learners.</li>
+        <li>Provides curriculum-aligned educational content.</li>
+        <li>Reduces dependence on expensive internet connectivity.</li>
+      </ul>
+    </div>
+
+    <div class="modal-section">
+      <h3>🎯 Ideal For</h3>
+      <ul>
+        <li>Primary and secondary schools.</li>
+        <li>Community learning centers.</li>
+        <li>NGOs and educational projects.</li>
+        <li>Libraries and training institutions.</li>
+        <li>Organizations promoting digital learning.</li>
+      </ul>
+    </div>
+
+    <button class="close-action" onclick="closeKolibriModal()">
+      Close
+    </button>
+
+  </div>
+
+</div>
+
+<!-- =========================
+   JAVASCRIPT
+========================= -->
+<script>
+function openKolibriModal(){
+  document.getElementById("kolibriModal").style.display = "flex";
+}
+
+function closeKolibriModal(){
+  document.getElementById("kolibriModal").style.display = "none";
+}
+
+window.addEventListener("click", function(e){
+  const modal = document.getElementById("kolibriModal");
+  if(e.target === modal){
+    closeKolibriModal();
+  }
+});
+</script>
 </section>
 
 <section class="stats">
