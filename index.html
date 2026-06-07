@@ -243,7 +243,7 @@
     }
 
     .hero h1{
-      font-size:72px;
+      font-size:clamp(32px,7vw,72px);
       line-height:1.1;
       margin-bottom:24px;
       font-weight:800;
@@ -808,7 +808,15 @@
 
     }
 
-    /* =========================
+    
+.menu-toggle{
+  display:none;
+  font-size:30px;
+  cursor:pointer;
+  color:#111827;
+}
+
+/* =========================
               MOBILE
     ========================= */
 
@@ -891,7 +899,9 @@
 
     </a>
 
-    <nav class="site-nav">
+    <div class="menu-toggle" id="menu-toggle"><i class="fas fa-bars"></i></div>
+
+    <nav class="site-nav" id="site-nav">
 
       <a href="index.html"
          class="active">
@@ -1569,6 +1579,15 @@
     }
 
     type();
+
+    const menuToggle = document.getElementById("menu-toggle");
+    const siteNav = document.getElementById("site-nav");
+
+    if(menuToggle && siteNav){
+      menuToggle.addEventListener("click", () => {
+        siteNav.classList.toggle("show");
+      });
+    }
 
   </script>
 
