@@ -499,82 +499,6 @@ window.addEventListener("click", function(e){
 </div>
 
 <!-- =========================
-   MODAL
-========================= -->
-<div id="cardModal" class="modal">
-
-  <div class="modal-card">
-
-    <span class="close-btn" onclick="closeCardModal()">&times;</span>
-
-    <h2>Business Cards Design & Branding</h2>
-
-    <p class="subtitle">
-      Professional business card design services that help individuals and organizations create a strong first impression and build a memorable brand identity.
-    </p>
-
-    <div class="modal-section">
-      <h3>🪪 Services Offered</h3>
-      <ul>
-        <li>Corporate business card design.</li>
-        <li>Personal and professional branding cards.</li>
-        <li>Minimalist, modern and luxury card styles.</li>
-        <li>Double-sided and custom layout designs.</li>
-        <li>Print-ready files for high-quality production.</li>
-      </ul>
-    </div>
-
-    <div class="modal-section">
-      <h3>✨ Key Features</h3>
-      <ul>
-        <li>Clean and professional visual identity.</li>
-        <li>Custom branding aligned with your business.</li>
-        <li>High-resolution print quality designs.</li>
-        <li>Unique and creative layouts.</li>
-        <li>Suitable for all industries and professionals.</li>
-      </ul>
-    </div>
-
-    <div class="modal-section">
-      <h3>🎯 Ideal For</h3>
-      <ul>
-        <li>Business owners and entrepreneurs.</li>
-        <li>Corporate staff and professionals.</li>
-        <li>Freelancers and creatives.</li>
-        <li>NGOs and organizations.</li>
-        <li>Startups and growing businesses.</li>
-      </ul>
-    </div>
-
-    <button class="close-action" onclick="closeCardModal()">
-      Close
-    </button>
-
-  </div>
-
-</div>
-
-<!-- =========================
-   JAVASCRIPT
-========================= -->
-<script>
-function openCardModal(){
-  document.getElementById("cardModal").style.display = "flex";
-}
-
-function closeCardModal(){
-  document.getElementById("cardModal").style.display = "none";
-}
-
-window.addEventListener("click", function(e){
-  const modal = document.getElementById("cardModal");
-  if(e.target === modal){
-    closeCardModal();
-  }
-});
-</script>
-
-<!-- =========================
    PORTFOLIO CARD
 ========================= -->
 <div class="portfolio-item" data-category="printing">
@@ -762,7 +686,104 @@ window.addEventListener("click", function(e){
   }
 });
 </script>
+<!-- =========================
+   PORTFOLIO CARD
+========================= -->
+<div class="portfolio-item" data-category="printing">
 
+  <img src="media/Large format prints.jpg">
+
+  <div class="portfolio-content">
+    <span class="tag">Printing</span>
+    <h3>Banner Printing</h3>
+    <p>High-quality banners for events, businesses and promotions.</p>
+
+    <button class="pro-btn" onclick="openBannerModal()">
+      View Insights
+    </button>
+  </div>
+
+</div>
+
+<!-- =========================
+   MODAL
+========================= -->
+<div id="bannerModal" class="modal">
+
+  <div class="modal-card">
+
+    <span class="close-btn" onclick="closeBannerModal()">&times;</span>
+
+    <h2>Banner Printing</h2>
+
+    <p class="subtitle">
+      Professional large-format printing solutions designed to help businesses, schools, churches, NGOs, and organizations promote their brand with maximum visibility.
+    </p>
+
+    <div class="modal-section">
+      <h3>🖨️ Printing Services</h3>
+      <ul>
+        <li>Business promotional banners.</li>
+        <li>Church and event banners.</li>
+        <li>School branding and educational displays.</li>
+        <li>Roll-up banners and exhibition displays.</li>
+        <li>Outdoor and indoor advertising banners.</li>
+      </ul>
+    </div>
+
+    <div class="modal-section">
+      <h3>✨ Key Features</h3>
+      <ul>
+        <li>High-resolution full-color printing.</li>
+        <li>Durable materials for long-lasting use.</li>
+        <li>Custom sizes and designs available.</li>
+        <li>Professional finishing and mounting options.</li>
+        <li>Suitable for both indoor and outdoor environments.</li>
+      </ul>
+    </div>
+
+    <div class="modal-section">
+      <h3>🎯 Ideal For</h3>
+      <ul>
+        <li>Businesses and corporate events.</li>
+        <li>Schools and educational institutions.</li>
+        <li>Churches and ministries.</li>
+        <li>NGOs and community organizations.</li>
+        <li>Trade shows, exhibitions, and promotions.</li>
+      </ul>
+    </div>
+
+    <button class="close-action" onclick="closeBannerModal()">
+      Close
+    </button>
+
+  </div>
+
+</div>
+
+<!-- =========================
+   JAVASCRIPT
+========================= -->
+<script>
+function openBannerModal(){
+  document.getElementById("bannerModal").style.display = "flex";
+}
+
+function closeBannerModal(){
+  document.getElementById("bannerModal").style.display = "none";
+}
+
+window.addEventListener("click", function(e){
+  const modal = document.getElementById("bannerModal");
+  if(e.target === modal){
+    closeBannerModal();
+  }
+});
+</script>
+
+
+
+   
 <!-- =========================
    PORTFOLIO CARD
 ========================= -->
